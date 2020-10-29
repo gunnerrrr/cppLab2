@@ -1,5 +1,5 @@
 public enum SalaryCategory{
-    hight,
+    high,
     medium,
     low
 }

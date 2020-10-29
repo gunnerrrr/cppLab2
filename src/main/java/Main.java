@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-      ArrayList<Employee> employeeArrayList=new ArrayList<>();
+      ArrayList<Employee> employeeArrayList;
       EmployeeManager employeeManager = new EmployeeManager();
 
       String fileName = "C:\\Users\\Admin\\Desktop\\employees.txt";
@@ -23,7 +23,7 @@ public class Main {
              employeeManager.PrintFirstMap(firstMap);
           }
           if(num==2) {
-             HashMap<SalaryCategory,Employee> secondMap= employeeManager.SecondMap(employeeArrayList);
+             HashMap<SalaryCategory,ArrayList<Employee>> secondMap= employeeManager.SecondMap(employeeArrayList);
              employeeManager.PrintSecondMap(secondMap);
           }
           if(num==3) {
